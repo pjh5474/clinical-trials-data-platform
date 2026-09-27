@@ -1,0 +1,104 @@
+# =========================
+# Environment / Secrets
+# =========================
+.env
+.env.*
+!.env.example
+
+# GCP / service account credentials
+service-account*.json
+gcp-service-account*.json
+*service-account-key*.json
+credentials.json
+
+# Databricks / local credentials
+.databricks/
+.databrickscfg
+
+# =========================
+# Python
+# =========================
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# =========================
+# Jupyter / Notebooks
+# =========================
+.ipynb_checkpoints/
+
+# =========================
+# dbt
+# =========================
+dbt/**/.venv/
+dbt/**/target/
+dbt/**/logs/
+dbt/**/dbt_packages/
+
+# Local dbt profile / credentials
+profiles.yml
+
+# =========================
+# Data / Pipeline Artifacts
+# =========================
+# Raw ClinicalTrials.gov archives
+*.json.gz
+*.ndjson
+*.jsonl
+
+# Columnar / exported datasets
+*.parquet
+*.orc
+*.avro
+
+# Local Delta Lake data
+_delta_log/
+*.crc
+
+# Generic local data directories
+data/
+raw/
+output/
+outputs/
+tmp/
+temp/
+
+# Large exports / ad-hoc extracts
+*.csv
+*.tsv
+*.xlsx
+
+# =========================
+# Node / Frontend tooling
+# =========================
+node_modules/
+.next/
+out/
+dist/
+coverage/
+
+# =========================
+# IDE / OS
+# =========================
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# =========================
+# Logs
+# =========================
+*.log
+logs/

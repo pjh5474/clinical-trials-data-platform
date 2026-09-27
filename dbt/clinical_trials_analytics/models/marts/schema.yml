@@ -1,0 +1,31 @@
+version: 2
+
+models:
+  - name: mart_trial_overview
+
+    description: >
+      Dashboard overview metrics derived from
+      the ClinicalTrials.gov yearly Gold dataset.
+
+    columns:
+      - name: overview_key
+        description: Single-row identifier.
+        data_tests:
+          - unique
+          - not_null
+
+      - name: total_trials
+        data_tests:
+          - not_null
+
+      - name: interventional_trials
+        data_tests:
+          - not_null
+
+      - name: observational_trials
+        data_tests:
+          - not_null
+
+      - name: other_trials
+        data_tests:
+          - not_null
